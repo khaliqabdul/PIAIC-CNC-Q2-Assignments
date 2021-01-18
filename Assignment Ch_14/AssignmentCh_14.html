@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin-left: 50px;
+            margin-right: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .header{
+            background-color: black;
+            padding: 20px;
+        }
+        .dot{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #474141;
+            display: inline-block;
+            font-size: 15px;
+            padding: 4px;
+            text-align: center;
+            color: white;
+        }
+        span > a{
+            color: black;
+            font-weight: bold;
+        }
+        .three{
+            padding: 150px 0px 100px 0px;
+            background-color: rgb(25, 129, 25);
+            margin-top: 80px;
+            text-align: center;
+        }
+        .three h1{
+            background-color: rgb(192, 245, 114);
+        }
+        .three h1 span{
+            font-size: 50px;
+            background-color: rgb(25, 129, 25);
+            color: white;
+            padding: 10px 10px 10px 10px;
+            letter-spacing: 5px;
+        }
+        #more{
+            display: none;
+        }
+        .icon{
+           margin-left: 50px;
+           height: 200px;
+           width: 170px;
+           display: inline-block;
+        }
+        .aboutus{
+            height: 500px;            
+            background-color: lightgray;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .services{
+           margin-left: 40px;
+           height: 180px;
+           width: 250px;
+           display: inline-block;
+           background-color: rgb(191, 220, 230);
+        }
+        .circle {
+            background: orange;
+            border-radius: 50%;
+            color: #fff;
+            height: 3em;
+            position: relative;
+            width: 3em;
+            left: 40%;
+            top: -20px;
+        }
+        .inner{
+            top: 30%; left:35%; /* of the container */
+            position: relative;
+            color: red;
+        }
+        .text{
+            width: 200px;
+            height: 120px;
+            text-align: center;
+            margin-left: -90px;
+            color: rgba(90, 86, 86, 0.87);
+            margin-top: 40px;
+        }
+        .btn{
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            color: green;
+            background-color: inherit;
+            text-decoration: underline;
+        }
+        .portfolio{
+            background-color: black;
+            height: 400px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="dot"><a style="font-weight: bold;font-size: 15px;" target="_blank" href="https://www.facebook.com/abdulkhaliq.azeemi/">f</a>f</span>
+        <span class="dot">tw</span>
+        <span class="dot">g+</span>
+        <span class="dot">in</span>
+        <span class="dot" style="font-size: 13px;">tube</span>
+        <span style="float: right;"> <button style="background-color: greenyellow;height:30px; margin-left: 10px;border-radius: 15px;">CALL ME BACK</button> </span>
+        <span class="fa fa-phone" style="font-size:20px;color:white; float: right;">+92(332)-7509421</span> 
+    </div>
+    <div style="margin-top: 20px;">
+        <img src="./logo-color.png" width="150" height="50" alt="panacloud" align="left">
+        <p style="float: right;word-spacing: 20px;">
+            <span><a href="">WHYUS</a></span>
+            <span><a href="">ABOUT</a></span>
+            <span><a href="">SERVICES</a></span>
+            <span><a href="./AssignmentCh_14.html">PORTFOLIO</a></span>
+            <span><a href="">PROCESS</a></span>
+            <span><a href="">REVIEWS</a></span>
+            <span><a href="">OURSKILLS</a></span>
+            <span><a href="">CONTACTUS</a></span>
+        </p>
+    </div>
+    
+    <div class="three">
+        <h1><span>WE ARE EXPERTS</span></h1>
+        <p style="margin: 0px 200px 0px 200px; color: rgb(255, 255, 255);text-align: center;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, 
+            nisi lorem egestas vitae scel<span id="dots">.....</span><span id="more">erisque enim ligula venenatis dolor. 
+            aecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
+            Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+            Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. 
+            Sed dapibus pulvinar nibh tempor porta.</span>
+        </p>
+        <br>
+        <br>
+        <br>
+        <button onclick="myFunction()" id="btn" style="background-color: orange; height: 35px;width: 150px;">READ MORE</button>
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("btn");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "READ MORE";
+                    moreText.style.display = "none";
+                }else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "READ LESS"; 
+                    moreText.style.display = "inline";
+                }
+            }
+        </script>
+    </div>
+    <p style="text-align: center;font-weight: bold;font-size: 40px;">
+        <span style="color: black;">OUR</span><span style="color: green;"> ADVANTAGES</span>
+    </p>
+    <p style="text-align: center;margin: -30px 250px 0px; color: grey;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, 
+        nisi lorem egestas vitae scel erisque enim ligula venenatis dolor.aecenas nisl est,
+    </p>
+    
+    <div class="icon">
+        <img src="./bulb.png" alt="bulb" width="160" height="150">
+        <p style="margin-left: 20px;">INNOVATION</p>
+        <p style="color: grey;font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="icon">
+        <img src="./Thumb.png" alt="Thumb" width="140" height="140">
+        <p style="margin-left: 20px;">QUALITY</p>
+        <p style="color: grey;font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="icon">
+        <img src="./Clock.png" alt="Clock" width="120" height="120">
+        <p style="margin-left: 20px;">EXPERIANCE</p>
+        <p style="color: grey;font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="icon">
+        <img src="./HappyClient.png" alt="bulb" width="120" height="120">
+        <p style="margin-left: 20px;">HAPPY CLIENTS</p>
+        <p style="color: grey;font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="icon">
+        <img src="./Support.jpeg" alt="bulb" width="130" height="120">
+        <p style="margin-left: 20px;">SUPPORT</p>
+        <p style="color: grey;font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="aboutus">
+        <div style="padding-top: 15px;">
+            <h1><span>ABOUT</span><span style="color: green;"> US</span></h1>
+        </div>
+        <div style="text-align: justify; width: 500px; margin-left: 0px;display: inline-block;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, 
+            nisi lorem egestas vitae scel sed ullamcorper ipsum dignissim ac.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, 
+            nisi lorem egestas vitae scel sed ullamcorper ipsum dignissim ac. vitae dui eget tellus gravida venenatis. Integer fringilla 
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, 
+            nisi lorem egestas vitae scel<span id="dotss">.....</span><span id="moree" style="display: none;">erisque enim ligula venenatis dolor. 
+            aecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
+            Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+            Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. 
+            Sed dapibus pulvinar nibh tempor porta.</span> 
+            </p>
+            <button onclick="youFunction()" id="myBtn" style="background-color: orange; height: 35px;width: 150px;">READ MORE</button>
+            <script>
+                function youFunction() {
+                    var dots = document.getElementById("dotss");
+                    var moreText = document.getElementById("moree");
+                    var btnText = document.getElementById("myBtn");
+
+                    if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "READ MORE";
+                        moreText.style.display = "none";
+                    }else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "READ LESS"; 
+                        moreText.style.display = "inline";
+                    }
+                }
+            </script>
+        </div>
+        <div style="float:right;margin-right: 40px;">
+            <img src="./AboutUs1.jpg.jpg" alt="aboutus" style="height: 300px;width: 500px;border-radius: 20px;" >
+        </div>   
+    </div>
+    <p style="text-align: center;font-weight: bold;font-size: 40px;">
+        <span style="color: black;">OUR</span><span style="color: green;"> SERVICES</span>
+    </p>
+    <p style="text-align: center;margin: -30px 250px 0px; color: grey;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, 
+        nisi lorem egestas vitae scel erisque enim ligula venenatis dolor.aecenas nisl est,
+    </p>
+    <br>
+    <br>
+    <div class="services" style="float: left;">
+       <div class="circle">
+            <div class="fa fa-star inner">
+                <div class="text">
+                    <h4>WEB DESIGN</h4>
+                    <p style="font-size: small;">I am a student of cloud native and web computing in PIAIC. I have earned 93 percentile in Q1 </p>
+                    <button class="btn">read more</button>
+                </div>
+            </div>
+       </div>
+
+    </div>
+    <div class="services">
+        <div class="circle">
+            <div class="fa fa-star inner">
+                <div class="text">
+                    <h4>GRAPHIC DESIGN</h4>
+                    <p style="font-size: small;">I am a student of cloud native and web computing in PIAIC. I have earned 93 percentile in Q1 </p>
+                    <button class="btn">read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <div class="circle">
+            <div class="fa fa-star inner">
+                <div class="text">
+                    <h4>BRANDING</h4>
+                    <p style="font-size: small;">I am a student of cloud native and web computing in PIAIC. I have earned 93 percentile in Q1 </p>
+                    <button class="btn">read more</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="services">
+        <div class="circle">
+            <div class="fa fa-star inner">
+                <div class="text">
+                    <h4>MARKETING</h4>
+                    <p style="font-size: small;">I am a student of cloud native and web computing in PIAIC. I have earned 93 percentile in Q1 </p>
+                    <button class="btn">read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio">
+        <p style="text-align: center;font-weight: bold;font-size: 40px;padding-top: 25px;">
+            <span style="color: white;">OUR</span><span style="color: green;"> PORTFOLIO</span>
+        </p>
+        <p style="text-align: center;margin: -30px 300px 0px; color: white;font-size: 12px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, 
+            nisi lorem egestas vitae scel erisque enim ligula venenatis dolor.aecenas nisl est,
+        </p>
+        <p style="margin-left: 250px;word-spacing: 20px;">
+            <span style="color: whitesmoke; ><a href="">WEBDESIGN</a></span>
+            <span style="color: whitesmoke; ><a href="">GRAPHICDESIGN</a></span>
+            <span style="color: whitesmoke; ><a href="">BRANDING</a></span>
+            <span style="color: whitesmoke; ><a href="">LOGO</a></span>
+            <span style="color: whitesmoke; ><a href="">MARKETING</a></span>
+            <span style="color: whitesmoke; ><a href="">ADVERTISEMENT</a></span>
+        </p>
+    </div>
+</body>
+</html>
