@@ -1,0 +1,401 @@
+body{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header{
+    background-color: black;
+    padding: 20px;
+}
+.dot{
+    position: relative;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #474141;
+    justify-content: center;
+    font-size: 15px;
+    padding: 4px;
+    color: white;
+    display: inline-block;
+}
+span > a{
+    color: black;
+    font-weight: bold;
+}
+.three{
+    padding: 150px 0px 100px 0px;
+    background-color: rgb(25, 129, 25);
+    margin-top: 80px;
+    text-align: center;
+}
+.three h1{
+    background-color: rgb(192, 245, 114);
+}
+.three h1 span{
+    font-size: 50px;
+    background-color: rgb(25, 129, 25);
+    color: white;
+    padding: 10px 10px 10px 10px;
+    letter-spacing: 5px;
+}
+#more{
+    display: none;
+}
+.icon{
+   margin-left: 50px;
+   height: 200px;
+   width: 170px;
+   display: inline-block;
+}
+.aboutus{
+    height: 500px;            
+    background-color: lightgray;
+    margin-top: 50px;
+    text-align: center;
+}
+.services{
+   margin-left: 40px;
+   height: 180px;
+   width: 250px;
+   display: inline-block;
+   background-color: rgb(191, 220, 230);
+}
+.circle {
+    background: orange;
+    border-radius: 50%;
+    color: #fff;
+    height: 3em;
+    position: relative;
+    width: 3em;
+    left: 40%;
+    top: -20px;
+}
+.inner{
+    top: 30%; left:35%; /* of the container */
+    position: relative;
+    color:red;
+}
+.text{
+    width: 200px;
+    height: 120px;
+    text-align: center;
+    margin-left: -90px;
+    color: rgba(90, 86, 86, 0.87);
+    margin-top: 40px;
+}
+.btn{
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: green;
+    background-color: inherit;
+    text-decoration: underline;
+}
+.portfolio{
+    background-color: black;
+    height: 600px;
+}
+.column{
+    border-style: solid;
+    border-color: black;
+    padding: 0px;
+    width: 190px;
+    height: 170px;
+    display: inline-block;  
+}
+.row{
+    margin: 40px 0px 0px 90px;
+}
+.mainprocess{
+    display: inline-block;
+    margin-left: 40px;
+}
+.process{
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+   border: solid gray;
+   padding: 0px 20px 30px 20px;
+}
+.one {
+    background: orange;
+    border-radius: 50%;
+    color: #fff;
+    height: 1.5em;
+    position: relative;
+    width: 1.5em;
+    left: 42%;
+    top: -30px;
+}
+.num{
+    top: 22%; left:35%; /* of the container */
+    position: relative;
+    color:black;
+}
+.pic{
+    margin-left: -35px;
+}
+.processtext{
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    font-size: 12px;
+}
+.peopleaboutus{
+    height: 500px;            
+    background-color: lightgray;
+    margin-top: 50px;
+    text-align: center;
+}
+.paboutusone{
+    width: 500px;
+    height: 130px;
+    margin-left: 50px;
+}
+.paboutustwo{
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   background-color: honeydew;
+   display: inline-block;
+   text-align: center;
+   position: relative;top: 40px;left: -20px;
+}
+.paboutustwo img{
+    position: relative;
+    display: flex;
+    top: 25px;
+    left: 25px;
+}
+.paboutusthree{
+    width: 350px;
+    height: 80px;
+    position: relative;top: 25px;
+    display: inline-block;
+    text-align: justify;
+    font-size: 12px;
+}
+.hl{
+    width: 385px;
+    height: 0px;
+    background-color: gray;
+    border-bottom: 1px solid;
+}
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.container .card{
+    position: relative;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+.container .card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    background: rgba(55, 175, 205, .03);
+    pointer-events: none;
+    z-index: 1;
+}
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    z-index: 1000;
+}
+.percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.percent .number h2{
+    color: rgb(26, 25, 25);
+    font-weight: 700;
+    font-size: 40px;
+    transition: 00.5s;
+}
+.card:hover .percent .number h2{
+    font-size: 60px;
+    color: #051d88;
+}
+.percent .number h2 span{
+    font-size: 24px;
+    color: #051d88;
+    transition: 00.5s;
+}
+.card:hover .percent .number h2 span{
+    color: rgb(226, 15, 15);
+}
+.text1{
+    position: relative;
+    color: blue;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 00.5s;
+}
+.card:hover .text1{
+    color: rgb(226, 15, 15);
+}
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 5;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+}
+svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-width: 10;
+}
+.card:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 45) / 100);
+    stroke: orange;
+}
+.card:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 60) / 100);
+    stroke: #00a1ff;
+}
+.card:nth-child(3) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 75) / 100);
+    stroke: #ff04f7;
+}
+.card:nth-child(4) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 80) / 100);
+    stroke: #0cbb06;
+}
+.project{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: rgb(81, 133, 2);
+    margin-top: 30px;
+    
+}
+.project h1{
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 30px;
+    font-size: 50px;
+}
+.project .form{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 50px;
+}
+.project input [type=text]{
+    padding: 55px 10px;
+}
+.project .text2{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 100px;
+    left: 350px;
+    width: 500px;
+    color: rgb(58, 57, 57);    
+}
+input[type=text], select {
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=email], select {
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=phone], select {
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit], select {
+    padding: 15px 20px;
+    width: 200px;
+    border: 1px solid orange;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: orange;
+    color: black;
+    cursor: pointer;
+  }
+  .contacts{
+      position: relative;
+     text-align: center;
+     font-size: 16px;
+  }
+  .footer{
+      position: relative;
+      display: flex;
+      background:rgb(81, 133, 2);;
+      height:300px;
+      width: 100%;
+  }
+  .footer .ftone{
+      position: relative;
+      text-align: left;
+      border-right: #fff 1px solid;
+      width: 200px;
+      height: 200px;
+      margin-left: 70px;
+      top: 40px;
+      color: #fff;
+  }
+  .footer .fttwo{
+      position: relative;
+      top: -20px;
+  }
+  .footer .fttwo p{
+        font-size: 12px;
+        width: 150px;
+}
+.footer .ftthree{
+    position: relative;
+    top: -20px;
+    font-size: 14px;
+}
