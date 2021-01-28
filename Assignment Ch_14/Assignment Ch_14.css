@@ -364,6 +364,65 @@ input[type=text], select {
     color: black;
     cursor: pointer;
   }
+ 
+  .packages{
+      position: relative;
+      top: 30px;
+      width: 100%;
+      height: 600px;
+      background: #ccc;
+      text-align: center;
+      align-items: center;
+  }
+  .packages .h1{
+      position: relative;
+      top: 30px;
+  }
+  .packages .premium{
+      position: relative;
+      left: 10px;
+      top: 40px;
+      background: white;
+      width: 280px;
+      height: 380px;
+      border: thistle 5px solid;
+      text-align: center;
+      color: gray;
+      font-size: 14px;
+     display: inline-block;
+  }
+  .packages .premium h4{
+    border-bottom: gray 1px solid;
+    width: 200px;
+    height: 30px;
+    position: relative;
+    left: 20px;
+  }
+  .packages .premium p{
+      position: relative;
+      top: -20px;
+      margin-bottom: -.5em;
+  }
+  .packages .premium button{
+      background: #00a1ff;
+      width: 130px;
+      height: 40px;
+      position: relative;
+      top: 15px;
+  }
+  .packages .last{
+      position: relative;
+      top: 80px;
+      left: 520px;
+      width: 150px;
+      
+  }
+  .packages .last button{
+      background: chartreuse;
+      width: 100%;
+      height: 30px;
+      color: white;
+  }
   .contacts{
       position: relative;
      text-align: center;
